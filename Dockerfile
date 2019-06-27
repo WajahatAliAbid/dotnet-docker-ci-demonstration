@@ -1,7 +1,7 @@
 FROM mcr.microsoft.com/dotnet/core/sdk:2.2 AS build-env
 WORKDIR /app
 
-COPY ./src/WajahatAliAbid.AspNetCore.Demo/*.csproj ./
+COPY ./src/WajahatAliAbid.AspNetCore.Demo/WajahatAliAbid.AspNetCore.Demo.csproj ./
 RUN dotnet restore
 
 COPY . ./
