@@ -1,3 +1,2 @@
-language: csharp
 services:
   - docker
