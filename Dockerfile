@@ -5,4 +5,4 @@ COPY ./src/WajahatAliAbid.DotnetCore.DemoCICD/WajahatAliAbid.DotnetCore.DemoCICD
 RUN dotnet restore
 
 COPY . ./
-ENTRYPOINT ["dotnet", "WajahatAliAbid.DotnetCore.DemoCICD.dll"]
+CMD ["dotnet", "WajahatAliAbid.DotnetCore.DemoCICD.dll"]
