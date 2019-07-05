@@ -11,4 +11,4 @@ RUN dotnet publish WajahatAliAbid.DotnetCore.DemoCICD.csproj -c Release -o out
 FROM mcr.microsoft.com/dotnet/core/runtime:2.2
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["WajahatAliAbid.DotnetCore.DemoCICD.dll"]
+CMD ["dotnet","WajahatAliAbid.DotnetCore.DemoCICD.dll"]
