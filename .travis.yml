@@ -3,7 +3,7 @@ services:
   - docker
 before_install:
   - docker build -t dotnetapicicd .
-  - docker ps -a
+  - docker images
   - docker run dotnetapicicd
 script:
   - echo "Built"
