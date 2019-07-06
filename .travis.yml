@@ -1,5 +1,9 @@
 language: csharp
 services:
   - docker
+before_install:
+  - docker build -t dotnetapicicd .
+  - docker ps -a
+  - docker run dotnetapicicd
 script:
   - echo "Built"
